@@ -8,7 +8,7 @@ import { Routes, Route } from 'react-router-dom'
 import { Fragment } from 'react'
 import axios from 'axios'
 function App() {
-	axios.defaults.baseURL = 'http://localhost:8000'
+	axios.defaults.baseURL = 'https://password-reset.onrender.com'
 
 	return (
 		<Fragment>
