@@ -9,7 +9,10 @@ import { Fragment } from 'react'
 import axios from 'axios'
 function App() {
 	axios.defaults.baseURL = 'https://password-reset.onrender.com'
-
+	axios.defaults.headers = {
+		'Access-Control-Allow-Origin': '*',
+		'Content-Type': 'application/json',
+	}
 	return (
 		<Fragment>
 			<div className='App'>
